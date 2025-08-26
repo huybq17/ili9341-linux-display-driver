@@ -1,7 +1,7 @@
 /dts-v1/;
 /plugin/;
 / {
-	/* Raspberry Pi 3 */
+	/* Raspberry Pi 4 Model B */
 	compatible = "brcm,bcm2711";
 
 	fragment@0 {
