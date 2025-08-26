@@ -168,7 +168,7 @@ static int ili9341_try_configure_dma(struct device_data *dev_data)
     int status;
     struct device *dev;
     status = 0;
-    dev = dev_data->client->master->dev.parent;
+    dev = dev_data->client->controller->dev.parent;
     dev_data->dma_dev = dev;
 
     if (!dev->dma_mask)

@@ -132,7 +132,7 @@ static int ili9341_send_display_buff_dma(struct device_data *dev_data)
     struct spi_transfer buff_transfer;
 
     spi_message_init(&buff_message);
-    buff_message.is_dma_mapped = 1;
+    // buff_message.is_dma_mapped = 1;
     buff_transfer.tx_buf = dev_data->display_buff;
     buff_transfer.len = ILI9341_BUFFER_SIZE;
     buff_transfer.tx_dma = dev_data->dma_display_buff;
